@@ -13,7 +13,7 @@ public:
         cout << "Enter Student Name: ";
         cin >> name;
 
-        cout << "Enter Roll No: ";
+        cout << "Enter Roll No ";
         cin >> roll;
 
         cout << "Enter Branch: ";
