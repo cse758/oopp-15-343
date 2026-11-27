@@ -70,5 +70,28 @@ void displayBill(const vector<Item>& cart)
 
 int main()
 {
-    
+      vector<Item> cart = {
+        {"Laptop", 1, 50000},
+        {"Mouse", 2, 500},
+        {"Keyboard", 1, 1500},
+        {"Bag", 1, 800}
+    };
+
+    cout << "--- Shopping Cart ---\n";
+    displayCart(cart);
+
+    cout << "\nTotal Amount: Rs. "
+         << calculateTotal(cart) << endl;
+
+    auto expensive = findMostExpensiveItem(cart);
+
+    cout << "Most Expensive Item: "
+         << expensive.name << endl;
+
+    applyDiscount(cart);
+
+    cout << "\nAfter Applying Discount:\n";
+    displayBill(cart);
+
+    return 0;
 }
