@@ -46,6 +46,17 @@ Item findMostExpensiveItem(const vector<Item>& cart)
     return expensive;
 }
 
+// 4. Apply 10% discount on items above Rs. 1000
+void applyDiscount(vector<Item>& cart)
+{
+    for (auto &item : cart)
+    {
+        if (item.price > 1000)
+            item.price = item.price * 0.90;
+    }
+}
+
+
 
 int main()
 {
