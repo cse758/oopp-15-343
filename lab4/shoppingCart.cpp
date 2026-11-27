@@ -56,7 +56,17 @@ void applyDiscount(vector<Item>& cart)
     }
 }
 
+// 5. Display final bill
+void displayBill(const vector<Item>& cart)
+{
+    cout << "\n--- Final Bill ---\n";
 
+    displayCart(cart);
+
+    cout << fixed << setprecision(2);
+    cout << "Updated Total: Rs. "
+         << calculateTotal(cart) << endl;
+}
 
 int main()
 {
